@@ -11,6 +11,7 @@ defined('ABSPATH') || exit;
 
 if (! class_exists('WP_GraphQL_Dokan')) :
 
+
     /**
      * Class QP_GraphQL_Dokan
      */
@@ -92,7 +93,7 @@ if (! class_exists('WP_GraphQL_Dokan')) :
 //            \WPGraphQL\Dokan\WooCommerce_Filters::setup();
 
             // Register WPGraphQL core filters.
-//            \WPGraphQL\Dokan\Core_Schema_Filters::add_filters();
+            \WPGraphQL\Dokan\CoreSchemaFilters::add_filters();
 
             // Register WPGraphQL ACF filters.
 //            \WPGraphQL\Dokan\ACF_Schema_Filters::add_filters();
@@ -100,9 +101,9 @@ if (! class_exists('WP_GraphQL_Dokan')) :
             // Register WPGraphQL JWT Authentication filters.
 //            \WPGraphQL\Dokan\JWT_Auth_Schema_Filters::add_filters();
 
-            // Initialize WooGraphQL TypeRegistry.
-//            $registry = new \WPGraphQL\Dokan\Type_Registry();
-//            add_action( 'graphql_register_types', array( $registry, 'init' ), 10, 1 );
+            // Initialize Dokan TypeRegistry.
+            $registry = new \WPGraphQL\Dokan\TypeRegistry();
+            add_action( 'graphql_register_types', array( $registry, 'init' ), 10, 1 );
         }
     }
     
