@@ -15,16 +15,29 @@ if (! class_exists('WP_GraphQL_Dokan')) :
      * Class QP_GraphQL_Dokan
      */
     final class WP_GraphQL_Dokan {
-        private static function instance() {
-            if ( ! isset(self::$instance) && ! ( is_a( self::$instance, __CLASS__ ))) {
+        /**
+         * Stores the instance of the WP_GraphQL_WooCommerce class
+         *
+         * @var WP_GraphQL_Dokan The one true WP_GraphQL_WooCommerce
+         */
+        private static $instance;
+
+        public static function instance() {
+            if ( ! isset( self::$instance ) && ! ( is_a( self::$instance, __CLASS__ ) ) ) {
                 self::$instance = new self();
                 self::$instance->includes();
                 self::$instance->setup();
             }
-            
-            do_action( 'graphql_dokan_init', self::$instance );
-            
-            return self::$instace;
+
+            /**
+             * Fire off init action
+             *
+             * @param WP_GraphQL_Dokan $instance The instance of the WP_GraphQL_WooCommerce class
+             */
+            do_action( 'graphql_woocommerce_init', self::$instance );
+
+            // Return the WPGraphQLWooCommerce Instance.
+            return self::$instance;
         }
 
         public static function get_post_types()
