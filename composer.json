@@ -1,0 +1,62 @@
+{
+    "name": "wessex-digital-solutions/wp-graphql-dokan",
+    "description": "An extension to WPGraphQL to use with the multi-vendor marketplace plugin. Based on WooGraphQL.",
+    "version": "0.0.1",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Wessex Digital Solutions",
+            "email": "os@wessexdigitalsolutions.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "firebase/php-jwt": "^5.2"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3",
+        "stripe/stripe-php": "^7.67",
+        "simpod/php-coveralls-mirror": "^3.0",
+        "lucatume/wp-browser": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "process-timeout": 0
+    },
+    "autoload": {
+        "files": [
+            "includes/functions.php"
+        ],
+        "psr-4": {
+            "WPGraphQL\\Dokan\\": "includes/"
+        },
+        "classmap": [
+            "includes/"
+        ]
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/_data/config.php"
+        ]
+    },
+    "scripts": {
+        "install-test-env": "bash bin/install-test-env.sh",
+        "docker-build": "bash bin/run-docker.sh build",
+        "docker-run": "bash bin/run-docker.sh run",
+        "docker-destroy": "docker-compose down",
+        "build-and-run": [
+            "@docker-build",
+            "@docker-run"
+        ],
+        "build-app": "@docker-build -a",
+        "build-test": "@docker-build -t",
+        "run-app": "@docker-run -a",
+        "run-test": "@docker-run -t",
+        "lint": "vendor/bin/phpcs"
+    },
+    "support": {
+        "issues": "https://github.com/wessex-digital-solutions/wp-graphql-dokan/issues",
+        "source": "https://github.com/wessex-digital-solutions/wp-graphql-dokan"
+    }
+}
