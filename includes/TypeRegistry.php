@@ -14,6 +14,8 @@ class TypeRegistry {
     {
         // Objects
         \WPGraphQL\Dokan\Type\Object\VendorType::register();
+        \WPGraphQL\Dokan\Type\Object\ShopAddressType::register();
+        \WPGraphQL\Dokan\Type\Object\SocialAccountsType::register();
 
         // Object fields
         \WPGraphQL\Dokan\Type\Object\RootQuery::register_fields();

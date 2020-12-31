@@ -52,6 +52,42 @@ class Vendor extends Model
                 },
                 'shop_url' => function() {
                     return ! is_null( $this->data->get_shop_url() ) ? $this->data->get_shop_url() : null;
+                },
+                'shop_address' => function() {
+                    return ! is_null( $this->data->get_address() ) ? $this->data->get_address() : null;
+                },
+                'shop_location' => function() {
+                    return ! is_null( $this->data->get_location() ) ? $this->data->get_location() : null;
+                },
+                'social' => function() {
+                    return ! is_null( $this->data->get_social_profiles() ) ? $this->data->get_social_profiles() : null;
+                },
+                'first' => function() {
+                    return ! is_null( $this->data->get_first_name() ) ? $this->data->get_first_name() : null;
+                },
+                'last' => function() {
+                    return ! is_null( $this->data->get_last_name() ) ? $this->data->get_last_name() : null;
+                },
+                'phone' => function() {
+                    return ! is_null( $this->data->get_phone() ) ? $this->data->get_phone() : null;
+                },
+                'email' => function() {
+                    return ! is_null( $this->data->get_email() ) ? $this->data->get_email() : null;
+                },
+                'show_email' => function() {
+                    return ! is_null( $this->data->show_email() ) ? $this->data->show_email() : null;
+                },
+                'banner' => function() {
+                    return ! is_null( $this->data->get_banner() ) ? $this->data->get_banner() : null;
+                },
+                'banner_id' => function() {
+                    return ! is_null( $this->data->get_banner_id() ) ? $this->data->get_banner_id() : null;
+                },
+                'avatar' => function() {
+                    return ! is_null( $this->data->get_avatar() ) ? $this->data->get_avatar() : null;
+                },
+                'avatar_id' => function() {
+                    return ! is_null( $this->data->get_avatar_id() ) ? $this->data->get_avatar_id() : null;
                 }
             );
         }
