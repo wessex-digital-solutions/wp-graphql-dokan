@@ -87,6 +87,42 @@ class VendorType {
                     'store_toc' => [
                         'type' => 'String',
                         'description' => __( 'Shops TOC content', 'wp-graphql-dokan' )
+                    ],
+                    'featured' => [
+                        'type' => 'Boolean',
+                        'description' => __( 'Is the store featured', 'wp-graphql-dokan' )
+                    ],
+                    'rating' => [
+                        'type' => 'StoreRating',
+                        'description' => __( 'Gives the store rating and number of ratings', 'wp-graphql-dokan' )
+                    ],
+                    'enabled' => [
+                        'type' => 'Boolean',
+                        'description' => __( 'Is the store enabled for selling?', 'wp-graphql-dokan' )
+                    ],
+                    'registered' => [
+                        'type' => 'String',
+                        'description' => __( '' )
+                    ],
+                    'payment' => [
+                        'type' => 'VendorPayments',
+                        'description' => __( 'Vendor payment settings', 'wp-graphql-dokan' )
+                    ],
+                    'trusted' => [
+                        'type' => 'Boolean',
+                        'description' => __( 'Is the store enabled for direct product posting?', 'wp-graphql-dokan' )
+                    ],
+                    'store_open_closed' => [
+                        'type' => 'StoreOpenClosed',
+                        'description' => __( 'Store opening and closing times', 'wp-graphql-dokan' )
+                    ],
+                    'vendor_commission_type' => [
+                        'type' => 'String',
+                        'description' => __( 'Which commission method is being used', 'wp-graphql-dokan' )
+                    ],
+                    'vendor_commission_rate' => [
+                        'type' => 'String',
+                        'description' => __( 'Vendor commission rate', 'wp-graphql-dokan' )
                     ]
                 ]
             )
