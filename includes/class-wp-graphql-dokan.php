@@ -11,20 +11,34 @@ defined('ABSPATH') || exit;
 
 if (! class_exists('WP_GraphQL_Dokan')) :
 
+
     /**
      * Class QP_GraphQL_Dokan
      */
     final class WP_GraphQL_Dokan {
-        private static function instance() {
-            if ( ! isset(self::$instance) && ! ( is_a( self::$instance, __CLASS__ ))) {
+        /**
+         * Stores the instance of the WP_GraphQL_WooCommerce class
+         *
+         * @var WP_GraphQL_Dokan The one true WP_GraphQL_WooCommerce
+         */
+        private static $instance;
+
+        public static function instance() {
+            if ( ! isset( self::$instance ) && ! ( is_a( self::$instance, __CLASS__ ) ) ) {
                 self::$instance = new self();
                 self::$instance->includes();
                 self::$instance->setup();
             }
-            
-            do_action( 'graphql_dokan_init', self::$instance );
-            
-            return self::$instace;
+
+            /**
+             * Fire off init action
+             *
+             * @param WP_GraphQL_Dokan $instance The instance of the WP_GraphQL_WooCommerce class
+             */
+            do_action( 'graphql_woocommerce_init', self::$instance );
+
+            // Return the WPGraphQLWooCommerce Instance.
+            return self::$instance;
         }
 
         public static function get_post_types()
@@ -79,7 +93,7 @@ if (! class_exists('WP_GraphQL_Dokan')) :
 //            \WPGraphQL\Dokan\WooCommerce_Filters::setup();
 
             // Register WPGraphQL core filters.
-//            \WPGraphQL\Dokan\Core_Schema_Filters::add_filters();
+            \WPGraphQL\Dokan\CoreSchemaFilters::add_filters();
 
             // Register WPGraphQL ACF filters.
 //            \WPGraphQL\Dokan\ACF_Schema_Filters::add_filters();
@@ -87,9 +101,9 @@ if (! class_exists('WP_GraphQL_Dokan')) :
             // Register WPGraphQL JWT Authentication filters.
 //            \WPGraphQL\Dokan\JWT_Auth_Schema_Filters::add_filters();
 
-            // Initialize WooGraphQL TypeRegistry.
-//            $registry = new \WPGraphQL\Dokan\Type_Registry();
-//            add_action( 'graphql_register_types', array( $registry, 'init' ), 10, 1 );
+            // Initialize Dokan TypeRegistry.
+            $registry = new \WPGraphQL\Dokan\TypeRegistry();
+            add_action( 'graphql_register_types', array( $registry, 'init' ), 10, 1 );
         }
     }
     
