@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e2bb6b666e3a659f6ab85d25519c724",
+    "content-hash": "c419cae5d5a85fbda3637a18087a5e35",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -435,16 +435,16 @@
         },
         {
             "name": "codeception/stub",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Stub.git",
-                "reference": "4c9cf3e19bd5f064e08e7f3ba6be651c218dc6ae"
+                "reference": "ce0a9e418c775ca8b737d50c2b4ac1132f3990d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Stub/zipball/4c9cf3e19bd5f064e08e7f3ba6be651c218dc6ae",
-                "reference": "4c9cf3e19bd5f064e08e7f3ba6be651c218dc6ae",
+                "url": "https://api.github.com/repos/Codeception/Stub/zipball/ce0a9e418c775ca8b737d50c2b4ac1132f3990d8",
+                "reference": "ce0a9e418c775ca8b737d50c2b4ac1132f3990d8",
                 "shasum": ""
             },
             "require": {
@@ -467,9 +467,9 @@
             "description": "Flexible Stub wrapper for PHPUnit's Mock Builder",
             "support": {
                 "issues": "https://github.com/Codeception/Stub/issues",
-                "source": "https://github.com/Codeception/Stub/tree/4.0.0"
+                "source": "https://github.com/Codeception/Stub/tree/4.0.1"
             },
-            "time": "2021-12-07T14:39:17+00:00"
+            "time": "2022-01-08T09:35:36+00:00"
         },
         {
             "name": "dg/mysql-dump",
@@ -1053,16 +1053,16 @@
         },
         {
             "name": "lucatume/wp-browser",
-            "version": "3.0.19",
+            "version": "3.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucatume/wp-browser.git",
-                "reference": "4f4c11f11305418e150f0ef1f4909c45f585b39f"
+                "reference": "c695d8e2fd075b85e89be57b1c10aec64530287a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucatume/wp-browser/zipball/4f4c11f11305418e150f0ef1f4909c45f585b39f",
-                "reference": "4f4c11f11305418e150f0ef1f4909c45f585b39f",
+                "url": "https://api.github.com/repos/lucatume/wp-browser/zipball/c695d8e2fd075b85e89be57b1c10aec64530287a",
+                "reference": "c695d8e2fd075b85e89be57b1c10aec64530287a",
                 "shasum": ""
             },
             "require": {
@@ -1143,7 +1143,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lucatume/wp-browser/issues",
-                "source": "https://github.com/lucatume/wp-browser/tree/3.0.19"
+                "source": "https://github.com/lucatume/wp-browser/tree/3.0.22"
             },
             "funding": [
                 {
@@ -1151,7 +1151,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-06T09:42:39+00:00"
+            "time": "2022-01-14T08:41:20+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -1217,9 +1217,6 @@
                 "bordoni/phpass": "0.3.*",
                 "illuminate/support": ">=4.0.0",
                 "php": ">=5.3.0"
-            },
-            "replace": {
-                "mikemclin/laravel-wp-password": "self.version"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -1333,9 +1330,6 @@
             },
             "require": {
                 "php": "^7.1 || ^8.0"
-            },
-            "replace": {
-                "myclabs/deep-copy": "self.version"
             },
             "require-dev": {
                 "doctrine/collections": "^1.0",
@@ -5814,5 +5808,5 @@
         "php": ">=7.1.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
