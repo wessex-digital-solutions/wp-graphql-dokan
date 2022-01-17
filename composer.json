@@ -12,12 +12,12 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "firebase/php-jwt": "^5.2"
+        "firebase/php-jwt": "5.5.1"
     },
     "require-dev": {
-        "wp-coding-standards/wpcs": "^2.3",
+        "wp-coding-standards/wpcs": "2.3.0",
         "stripe/stripe-php": "7.110.0",
-        "simpod/php-coveralls-mirror": "^3.0",
+        "simpod/php-coveralls-mirror": "3.0.1",
         "lucatume/wp-browser": "3.0.22"
     },
     "config": {
