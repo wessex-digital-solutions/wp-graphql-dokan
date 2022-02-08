@@ -18,7 +18,7 @@
         "wp-coding-standards/wpcs": "2.3.0",
         "stripe/stripe-php": "7.113.0",
         "simpod/php-coveralls-mirror": "3.0.1",
-        "lucatume/wp-browser": "3.0.22"
+        "lucatume/wp-browser": "3.1.3"
     },
     "config": {
         "optimize-autoloader": true,
