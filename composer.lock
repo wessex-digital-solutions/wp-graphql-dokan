@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76eb1939afa7f51cb1284605c0163a82",
+    "content-hash": "fcc3bf4daee9cc4faf71b917614db8a4",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -3910,16 +3910,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.121.0",
+            "version": "v7.128.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "e36e7afb71ae5511aae23b52dca712a0ef06d981"
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e36e7afb71ae5511aae23b52dca712a0ef06d981",
-                "reference": "e36e7afb71ae5511aae23b52dca712a0ef06d981",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c704949c49b72985c76cc61063aa26fefbd2724e",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e",
                 "shasum": ""
             },
             "require": {
@@ -3964,9 +3964,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.121.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.128.0"
             },
-            "time": "2022-03-30T15:51:23+00:00"
+            "time": "2022-05-05T17:18:02+00:00"
         },
         {
             "name": "symfony/config",
