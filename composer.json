@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "firebase/php-jwt": "6.1.0"
+        "firebase/php-jwt": "6.3.1"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "2.3.0",
