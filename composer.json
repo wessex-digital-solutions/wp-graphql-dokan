@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "2.3.0",
-        "stripe/stripe-php": "10.7.0",
+        "stripe/stripe-php": "16.1.0",
         "simpod/php-coveralls-mirror": "3.0.1",
         "lucatume/wp-browser": "3.1.7"
     },
