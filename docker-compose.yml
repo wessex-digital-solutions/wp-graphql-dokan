@@ -16,7 +16,7 @@ services:
           - ./docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
     db:
-        image: mysql:8.0
+        image: mysql:9.1
         restart: always
         environment:
             MYSQL_DATABASE: dbname
